@@ -4,7 +4,7 @@ from detail.models import Detail
 
 # Create your views here.
 
-def index(request):
+def detail_list(request):
     detail = Detail.objects.all()
     context = {
         "detail" : detail
